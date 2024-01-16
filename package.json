@@ -1,0 +1,40 @@
+{
+  "name": "airbnb-clone-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@badrap/bar-of-progress": "^0.2.2",
+    "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^1.0.6",
+    "@next/font": "^13.5.5",
+    "@reduxjs/toolkit": "^1.9.7",
+    "@tanstack/react-query": "^5.7.2",
+    "date-fns": "^2.30.0",
+    "fslightbox-react": "^1.7.6",
+    "geolib": "^3.3.4",
+    "mapbox-gl": "^2.15.0",
+    "next": "13.4.12",
+    "react": "^18.2.0",
+    "react-date-range": "^1.4.0",
+    "react-dom": "18.2.0",
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^4.11.0",
+    "react-map-gl": "^7.1.6",
+    "react-responsive-carousel": "^3.2.23",
+    "tailwind-scrollbar-hide": "^1.1.7",
+    "unique-names-generator": "^4.7.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "eslint": "8.46.0",
+    "eslint-config-next": "13.4.12",
+    "postcss": "^8.4.27",
+    "tailwindcss": "^3.3.3"
+  }
+}

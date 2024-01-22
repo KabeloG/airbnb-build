@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "../../components/Header";
 import Image from "next/image";
 import { useRouter } from "next/router";
@@ -30,18 +30,21 @@ function StayDetails({ cities }) {
   const parsedAmenities = JSON.parse(query.amenities);
 
   const [openLightbox, setOpenLightbox] = useState(false);
+  const [generatedName, setGeneratedName] = useState("");
 
   const addValues = (accumulator, currentValue) => {
     return accumulator + currentValue.amount;
   };
 
-  const config = {
-    dictionaries: [names],
-    style: "capital",
-    separator: " ",
-  };
+  useEffect(() => {
+    const config = {
+      dictionaries: [names],
+      style: "capital",
+      separator: " ",
+    };
 
-  const generatedName = uniqueNamesGenerator(config);
+    setGeneratedName(uniqueNamesGenerator(config));
+  }, []);
 
   return (
     <div>
